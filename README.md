@@ -34,7 +34,7 @@ Android Studio 용 중국어/일본어/한국어 언어 팩 (다른 IntelliJ 플
 2. 압축 파일을 해제하고 plugins/localization-ja/ko/zh 디렉터리에서 언어 팩 플러그인 파일을 찾습니다.
 3. localization-ja/ko/zh.jar 플러그인 파일에 대해 다음 명령어를 실행합니다.
 
-```
+```Bash
 jar xf localization-ja/ko/zh.jar META-INF/plugin.xml
 ver=$(grep '^  <version' META-INF/plugin.xml | cut -d'>' -f2 | cut -d'<' -f1)
 sed -i "/^  <idea-version/{s/$ver/201.7223.36/; s/$ver/999.999.999/1}" META-INF/plugin.xml
@@ -43,6 +43,8 @@ jar uf localization-ja/ko/zh.jar META-INF/plugin.xml
 
 [Releases]: https://github.com/kitty-panics/android-studio-ja-ko-zh/releases
 [IntelliJ IDEA]: https://www.jetbrains.com/idea/download/other.html
+
+## Others
 
 - https://plugins.jetbrains.com/plugin/13710-chinese-simplified-language-pack----/versions/stable/85840
 - https://plugins.jetbrains.com/plugin/13964-japanese-language-pack------/versions/stable/85841
